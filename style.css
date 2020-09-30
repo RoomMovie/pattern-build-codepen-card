@@ -1,0 +1,135 @@
+body {
+  background-color: #191919;
+  color: #999;
+  font-family: "Montserrat";
+  padding: 20px;
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #999;
+  text-decoration: none;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+a:active, a:focus, a:hover {
+  color: #fff;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+@media screen and (min-width: 400px) {
+  .bucket {
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: flex;
+  }
+}
+
+.bucket-content {
+  -webkit-box-flex: 1;
+          flex-grow: 1;
+}
+
+.bucket-media {
+  flex-shrink: 1;
+  margin-right: 10px;
+}
+.bucket-media > img {
+  display: block;
+}
+
+.card {
+  background-color: #2f2f31;
+  border-radius: 2px;
+  margin: 0 auto;
+  padding: 5px;
+  max-width: 370px;
+  text-align: center;
+}
+@media screen and (min-width: 400px) {
+  .card {
+    text-align: left;
+  }
+}
+
+.card-content {
+  padding: 15px 10px 5px;
+}
+
+.card-media,
+.card-media-img,
+.card-title {
+  display: block;
+}
+
+.card-meta-author,
+.card-meta-statList {
+  font-size: 12px;
+}
+
+@media screen and (min-width: 400px) {
+  .card-meta,
+  .card-meta-statList {
+    display: -webkit-box;
+    display: flex;
+  }
+}
+
+.card-meta-author {
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 400px) {
+  .card-meta-author {
+    margin-bottom: 0;
+  }
+}
+
+.card-meta-statList-item {
+  display: inline;
+}
+
+.card-meta-statList-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.card-title {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.split {
+  display: block;
+}
+@media screen and (min-width: 400px) {
+  .split {
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: flex;
+  }
+}
+
+.split-cell:first-child {
+  -webkit-box-flex: 1;
+          flex-grow: 1;
+}
+.split-cell:last-child {
+  flex-shrink: 0;
+}
